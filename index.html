@@ -52,25 +52,42 @@
           </li>
           <li><a href="contactus.html"><i class="fa fa-envelope-o"></i> Contact</a></li>
         </ul>
-        <form action="" class="navbar-form navbar-right" role="signin">
-          <div class="form-group">
-            <label for="email" class="sr-only">Email Address</label>
-            <input type="email" class="form-control" id="email" placeholder="Email">
-          </div>
-          <div class="form-group">
-            <label for="password" class="sr-only">Password</label>
-            <input type="password" class="form-control" id="password" placeholder="Password">
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox"> Remember me
-            </label>
-          </div>
-          <button class="btn btn-primary">Sign In</button>
-        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
       </div>
     </div>
   </nav>
+  <div id="loginModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Login</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-inline" role="signin">
+            <div class="form-group">
+              <label for="email" class="sr-only">Email Address</label>
+              <input type="email" class="form-control input-sm" id="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="password" class="sr-only">Password</label>
+              <input type="password" class="form-control input-sm" id="password" placeholder="Password">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox">Remember me
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm">Sign In</button>
+            <buttton type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</buttton>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <header class="jumbotron">
     <!-- Main component for a primary marketing message or call to action -->
     <div class="container">
@@ -86,7 +103,7 @@
         </div>
         <div class="col-sm-2 col-xs-12">
           <p style="padding: 40px;"></p>
-          <a href="#reservation-form" class="btn btn-warning btn-block">Reserve Table</a>
+          <a href="#reservation-form" class="btn btn-warning btn-block" data-toggle="tooltip" title="Or Call us at +852123456789" data-placement="bottom">Reserve Table</a>
         </div>
       </div>
     </div>
@@ -250,6 +267,11 @@
   <script src="js/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
 </body>
 
 </html>
