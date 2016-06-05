@@ -74,6 +74,27 @@ body {
   top: 100px;
 }
 
+.carousel {
+  background: #1a237e;
+}
+
+.carousel .item {
+  height: 300px;
+}
+
+.item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 300px;
+}
+
+#carouselButtons {
+  right: 0;
+  position: absolute;
+  bottom: 0;
+}
+
 
 
 
