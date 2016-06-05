@@ -1,0 +1,27 @@
+{
+  "name": "conFusion",
+  "homepage": "https://github.com/vikrantnegi/conFusion",
+  "authors": [
+    "Vikrant Negi <vikrantnegi007@gmail.com>"
+  ],
+  "description": "1.0.0",
+  "main": "Website for awesome restaraunt",
+  "keywords": [
+    "confusion",
+    "Fusion",
+    "Restaraunt"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.6.3"
+  }
+}
