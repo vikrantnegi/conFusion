@@ -23,41 +23,6 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle Navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="41" alt=""></a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
-          <li><a href="aboutus.html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About</a></li>
-          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspop="true" aria-expanded="false"> Menu <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Appetizers</a></li>
-              <li><a href="#">Main Courses</a></li>
-              <li><a href="#">Deserts</a></li>
-              <li><a href="#">Drinks</a></li>
-              <li role="seperator" class="divider"></li>
-              <li class="dropdown-header">Specials </li>
-              <li><a href="#">Lunch</a></li>
-              <li><a href="#">Weekend</a></li>
-            </ul>
-          </li>
-          <li><a href="contactus.html"><i class="fa fa-envelope-o"></i> Contact</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
   <div id="loginModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -87,8 +52,7 @@
       </div>
     </div>
   </div>
-
-  <div class="modal fade" id="reserveModal" role="dialog" arial-labelledby="reserveformModal">
+   <div class="modal fade" id="reserveModal" role="dialog" arial-labelledby="reserveformModal">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -146,13 +110,13 @@
                 <div class="input-group">
                   <input type="time" class="form-control" placeholder="Time">
                   <span class="glyphicon glyphicon glyphicon-time form-control-feedback"></span>
-                </div>              
+                </div>
               </div>
             </div>
             <button type="submit" class="col-sm-offset-2 btn btn-primary">Reserve</button>
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             <p style="padding: 5px;"></p>
-          </form>  
+          </form>
           <div class="alert alert-warning alert-dismissible" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span>&times;</span></button>
             <strong>Warning:</strong> Please <a href="tel:+852 1234 5678">call</a> us to reserve for more than six guests.
@@ -161,6 +125,44 @@
       </div>
     </div>
   </div>
+
+
+
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="41" alt=""></a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+          <li><a href="aboutus.html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About</a></li>
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspop="true" aria-expanded="false"> Menu <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Appetizers</a></li>
+              <li><a href="#">Main Courses</a></li>
+              <li><a href="#">Deserts</a></li>
+              <li><a href="#">Drinks</a></li>
+              <li role="seperator" class="divider"></li>
+              <li class="dropdown-header">Specials </li>
+              <li><a href="#">Lunch</a></li>
+              <li><a href="#">Weekend</a></li>
+            </ul>
+          </li>
+          <li><a href="contactus.html"><i class="fa fa-envelope-o"></i> Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <header class="jumbotron">
     <!-- Main component for a primary marketing message or call to action -->
@@ -264,7 +266,7 @@
             <a href="#"><img src="img/buffet.png" alt="" class="media-object img-thumbnail"></a>
           </div>
         </div>
-        
+
       </div>
     </div>
     <div class="row row-content">
@@ -334,11 +336,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $('[data-toggle="tooltip"]').tooltip();
-    });
-  </script>
 </body>
 
 </html>
